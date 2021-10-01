@@ -23,9 +23,9 @@ end
 function Drop(amt)
     for i=1, amt do
         game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(getgenv().item_name)
-        wait(0.7)
+        wait(0.4)
         game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(getgenv().item_name)
-        wait(0.7)
+        wait(0.4)
     end
 end
 
