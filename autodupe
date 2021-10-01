@@ -1,7 +1,7 @@
 repeat wait()
 until game:IsLoaded()
 
-wait(0.2)
+wait(0.4)
 
 function Get_Board()
     for i,v in pairs(workspace.Boards:GetChildren()) do
