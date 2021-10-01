@@ -13,9 +13,9 @@ end
 
 function Dupe(board)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.Controls.Close.Pad.CFrame.X, board.Controls.Close.Pad.CFrame.Y + 5, board.Controls.Close.Pad.CFrame.Z)
-    wait(1)
+    wait(0.5)
     game:GetService("ReplicatedStorage").RemoteEvents.Jumped:FireServer()
-    wait(0.4)
+    wait(0.2)
     game.Players.LocalPlayer:Kick()
     game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, Player)
 end
